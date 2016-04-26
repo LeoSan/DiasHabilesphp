@@ -1,6 +1,17 @@
 <?php
 
-echo "<br>**************************<br>";
+
+echo "<br>**********Forma 1 Solo contar dias y extraer la fecha  ****************<br>";
+
+$fecha = date('Y-m-j');
+$nuevafecha = strtotime ( '+2 day' , strtotime ( $fecha ) ) ;
+$nuevafecha = date ( 'Y-m-j' , $nuevafecha );
+ 
+echo "<br>********** ".$nuevafecha."  ****************<br>";
+
+
+
+echo "<br>**********Forma 2 ****************<br>";
 
 $fecha = '2016-04-26'; //formtao sql yyyy-mm-dd
 $cantidadDiasVacaciones = 3;
